@@ -61,6 +61,11 @@
         document.addEventListener('click', enableAudio);
         document.addEventListener('touchstart', enableAudio);
     </script>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.pathname.replace('/gallery.html', '/gallery'));
+        }
+    </script>
 </body>
 
 </html>
